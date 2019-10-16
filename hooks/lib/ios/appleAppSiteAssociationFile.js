@@ -108,7 +108,7 @@ function generateFileContentForHost(host, teamId) {
  */
 function saveContentToFile(filePrefix, content) {
   var dirPath = getWebHookDirectory();
-  var filePath = path.join(dirPath, filePrefix + '#' + ASSOCIATION_FILE_NAME);
+  var filePath = path.join(dirPath, ASSOCIATION_FILE_NAME);
 
   // create all directories from file path
   createDirectoriesIfNeeded(dirPath);
